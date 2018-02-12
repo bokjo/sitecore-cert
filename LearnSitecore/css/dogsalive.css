@@ -1,0 +1,119 @@
+﻿.navbar-inverse .navbar-brand {
+	background: url('../images/logo-small.png') center left no-repeat;
+	padding-left: 40px;
+	color: #fff;
+}
+
+.section-detail .aside {
+margin-top: 68px;
+}
+
+.pets img{
+	width: 200px;
+}
+
+.pets .media {
+	margin-bottom: 40px;
+}
+
+.section-detail .aside .btn-adopt {
+width: 100%;
+margin-bottom: 10px;
+}
+
+.section-detail .aside .btn-adopt span.small {
+display: block;
+font-size: 10px;
+}
+
+.portrait {
+	float: left;
+	border: 1px solid #9d9d9d;
+	padding: 20px;
+	margin: 0 20px 10px 0;
+}
+
+.vitals {
+}
+
+.portrait img {
+	width: 400px;
+}
+
+body {
+padding-bottom: 0;
+}
+footer {background: #232931; padding: 10px; color: #fff}
+
+.adopt .btn-default:hover,
+.promotion .btn-default:hover {
+	background: #232931;
+}
+
+.adopt img {
+margin-bottom: 10px;
+}
+
+.jumbotron {
+background: url('../images/dog-wallpaper-3.jpg') 6px -213px;
+background-size: 100%;
+color: #fff;	
+text-shadow: 1px 1px 1px #000;
+margin: 0;
+}
+
+.btn-primary{ background: #F68B1F; border: #F68B1F }
+
+.heading{ font-weight: bold; }
+
+.column-main h1 {
+	font-size: 48px;
+}
+
+.promotion {
+	padding: 20px;
+	background: #008998;
+	color: #fff;
+}
+
+.promotion .btn {
+background: #006f7c; 
+color: #fff;
+border: 0;
+}
+
+.adopt .btn {
+background: #0F4D7C;
+border: 0;
+color: #fff;
+} 
+
+.orange {
+	background: #F68B1F;
+}
+
+.teal {
+	background: #008998;
+}
+
+.promotion h2 {
+	margin-top: 0;
+}
+
+.section {
+	padding: 10px 0 30px 0;
+}
+
+.section-adopt {
+background: url('../images/background.jpg') top right no-repeat #125687;
+background-size: 50%;
+color: #fff;
+}
+
+.column-aside {
+	margin-top: 82px;
+}
+
+.pet-vitals {
+
+}
