@@ -121,6 +121,8 @@
     <Content Include="images\Fluffy.jpg" />
     <Content Include="images\Spot.jpg" />
     <Content Include="layouts\Dogs Alive\Main.aspx" />
+    <Content Include="layouts\Dogs Alive\PageContent.ascx" />
+    <Content Include="layouts\Dogs Alive\TwoColumns.ascx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -131,6 +133,20 @@
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="layouts\Dogs Alive\PageContent.ascx.cs">
+      <DependentUpon>PageContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Dogs Alive\PageContent.ascx.designer.cs">
+      <DependentUpon>PageContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Dogs Alive\TwoColumns.ascx.cs">
+      <DependentUpon>TwoColumns.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Dogs Alive\TwoColumns.ascx.designer.cs">
+      <DependentUpon>TwoColumns.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
