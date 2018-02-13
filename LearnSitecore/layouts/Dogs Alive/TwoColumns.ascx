@@ -3,14 +3,12 @@
 
 <div class="row">
     <div class="col-md-8">
-        <!-- LEFT COL -->
-        <h1>LEFT COL.</h1>      
-        <sc:Placeholder runat="server" Key="leftcol"/>
+        <!-- LEFT COL -->   
+        <sc:Placeholder runat="server" Key="leftcol"/>    
     </div>
     
     <div class="col-md-4 aside">
-        <!-- RIGHT COL -->
-        <h1>RIGHT COL.</h1>      
+        <!-- RIGHT COL -->    
         <sc:Placeholder runat="server" Key="rightcol"/>
     </div>
 </div>

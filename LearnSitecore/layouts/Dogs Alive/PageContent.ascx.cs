@@ -6,7 +6,12 @@
     {
         private void Page_Load(object sender, EventArgs e)
         {
-            // Put user code to initialize the page here
+            string datasourceGuid = Attributes["sc_datasource"];
+
+            if (!String.IsNullOrEmpty(datasourceGuid))
+            {
+                MainHeading.DataSource = MainImage.DataSource = MainText.DataSource = datasourceGuid;
+            }
         }
     }
 }
