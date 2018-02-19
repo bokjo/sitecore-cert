@@ -2,7 +2,9 @@
 {
     using Sitecore.Collections;
     using Sitecore.ContentSearch;
+    using Sitecore.ContentSearch.Linq;
     using Sitecore.ContentSearch.SearchTypes;
+    using Sitecore.ContentSearch.Utilities;
     using Sitecore.Data;
     using Sitecore.Data.Fields;
     using Sitecore.Data.Items;
@@ -11,6 +13,7 @@
     using Sitecore.SecurityModel;
     using Sitecore.Web.UI.WebControls;
     using System;
+    using System.Linq;
     using System.Web;
 
     public partial class PageInfo : System.Web.UI.UserControl
@@ -88,10 +91,31 @@
 
             using (var searchContext = index.CreateSearchContext())
             {
-                var results = searchContext.GetQueryable<SearchResultItem>();
+                //var results = searchContext.GetQueryable<CustomClass>().Where(x => x.MainHeading.Like("Dogs")).ToList();
+
+                //var results2 = searchContext.GetQueryable<CustomClass>().GetResults();
+
+                //var facets = results2.Facets.Categories;
+                //int total = results2.TotalSearchResults;
+                //var list = results2.Hits.Select(x => x.Document);
+
+                var results = searchContext.GetQueryable<SearchResultItem>().FacetOn(x => x.TemplateName).Take(50);
+
+                var resultSet = results.GetResults();
+                var count = resultSet.TotalSearchResults;
+                var facets = resultSet.Facets.Categories;
+
             }
 
-
+             
         }
+    }
+
+    public class CustomClass : SearchResultItem {
+        [IndexField("Main Heading")]
+        public string MainHeading { get; set; }
+
+        [IgnoreIndexFieldAttribute]
+        public string DoNotMapMe { get; set; }
     }
 }
