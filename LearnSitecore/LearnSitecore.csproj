@@ -76,6 +76,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sitecore.ContentSearch">
+      <HintPath>..\Libs\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq">
+      <HintPath>..\Libs\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\Libs\Sitecore.Kernel.dll</HintPath>
       <Private>True</Private>
@@ -122,6 +128,8 @@
     <Content Include="images\Spot.jpg" />
     <Content Include="layouts\Dogs Alive\Main.aspx" />
     <Content Include="layouts\Dogs Alive\PageContent.ascx" />
+    <Content Include="layouts\Dogs Alive\PageInfo.ascx" />
+    <Content Include="layouts\Dogs Alive\ThreeColumns.ascx" />
     <Content Include="layouts\Dogs Alive\TwoColumns.ascx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -139,6 +147,20 @@
     </Compile>
     <Compile Include="layouts\Dogs Alive\PageContent.ascx.designer.cs">
       <DependentUpon>PageContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Dogs Alive\PageInfo.ascx.cs">
+      <DependentUpon>PageInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Dogs Alive\PageInfo.ascx.designer.cs">
+      <DependentUpon>PageInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="layouts\Dogs Alive\ThreeColumns.ascx.cs">
+      <DependentUpon>ThreeColumns.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Dogs Alive\ThreeColumns.ascx.designer.cs">
+      <DependentUpon>ThreeColumns.ascx</DependentUpon>
     </Compile>
     <Compile Include="layouts\Dogs Alive\TwoColumns.ascx.cs">
       <DependentUpon>TwoColumns.ascx</DependentUpon>

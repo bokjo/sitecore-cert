@@ -8,10 +8,20 @@
         {
             string datasourceGuid = Attributes["sc_datasource"];
 
-            if (!String.IsNullOrEmpty(datasourceGuid))
-            {
-                MainHeading.DataSource = MainImage.DataSource = MainText.DataSource = datasourceGuid;
-            }
+            MainHeading.DataSource = datasourceGuid;
+            MainImage.DataSource = datasourceGuid;
+            MainText.DataSource = datasourceGuid;
+
+            var parametersRaw = Attributes["sc_parameters"];
+            var parametersCollection = Sitecore.Web.WebUtil.ParseUrlParameters(parametersRaw);
+            var background = parametersCollection["background"];
+
+            Background = background;
+        }
+
+        public string Background
+        {
+            get; set;
         }
     }
 }
