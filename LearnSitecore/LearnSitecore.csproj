@@ -127,6 +127,9 @@
     <Content Include="images\Fluffy.jpg" />
     <Content Include="images\Spot.jpg" />
     <Content Include="layouts\Dogs Alive\Main.aspx" />
+    <Content Include="layouts\Dogs Alive\Mobile.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="layouts\Dogs Alive\PageContent.ascx" />
     <Content Include="layouts\Dogs Alive\PageInfo.ascx" />
     <Content Include="layouts\Dogs Alive\ThreeColumns.ascx" />
@@ -142,6 +145,13 @@
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="layouts\Dogs Alive\Mobile.aspx.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Dogs Alive\Mobile.aspx.designer.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="layouts\Dogs Alive\PageContent.ascx.cs">
       <DependentUpon>PageContent.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
