@@ -1,0 +1,16 @@
+﻿## XPath Builder examples
+
+Context Node: /sitecore/content/Home/
+Expression: /sitecore/content/Home//*                              ## Returns all the children and grandchildren of Home...
+
+Context Node: /sitecore/content/Home/
+Expression: /sitecore/content/Home//*[@@templatename = "Pet"]      ## Returns all the items with specific template name
+Expression: /sitecore/content/Home//*[@#Main Heading# = "Dzeki"]   ## Returns all the items with specific "Main Heading" field
+
+Context Node: /sitecore/content/Home/Elderly Dogs/Torko
+Expression: ./ancestor-or-self::*[@@templatename = "Sample Item"]  ## Returns the parent of the particular context item
+
+
+Context Node: /sitecore/content/Home/Elderly Dogs
+Expression: ./descendant-or-self::*[@@templatename = "Pet"]        ## Return the children of the context containing the specific templatename
+

@@ -106,7 +106,6 @@
                 var facets = resultSet.Facets.Categories;
 
             }
-
              
         }
     }
