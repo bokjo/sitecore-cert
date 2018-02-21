@@ -14,3 +14,6 @@ Expression: ./ancestor-or-self::*[@@templatename = "Sample Item"]  ## Returns th
 Context Node: /sitecore/content/Home/Elderly Dogs
 Expression: ./descendant-or-self::*[@@templatename = "Pet"]        ## Return the children of the context containing the specific templatename
 
+...
+
+Took a look at the versioning, multi language setup and specific field versioning and sharing all done in Sitecore rocks and Sitecore Web client
