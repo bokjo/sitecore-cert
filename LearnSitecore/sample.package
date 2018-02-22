@@ -1,0 +1,100 @@
+<project site="learnsitecore" format="Zip Package" targetfilefolder="wwwroot">
+  <Metadata>
+    <metadata>
+      <PackageName>sample</PackageName>
+      <Author>che</Author>
+      <Version>1.0</Version>
+      <Revision />
+      <License> </License>
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/content/Copy Home Test/{B5CDF274-BB81-471F-9262-963408E886D3}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Devices/Default/{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/Dogs Alive/Main/{D3B6DEEB-8EBE-47BA-BA18-8CED6691CFA6}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Common/Folder/{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Common/Folder/__Standard Values/{FC118F80-8638-483C-A810-214E91F69CA4}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/Sample Sublayout/{885B8314-7D8C-4CBB-8000-01421EA8F406}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/Sample Inner Sublayout/{CE4ADCFB-7990-4980-83FB-A00C1E3673DB}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Devices/Print/{46D2F427-4CE5-4E1F-BA10-EF3636F43534}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/Sample Layout/{14030E9F-CE92-49C6-AD87-7D49B50E42EA}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sample/Sample Item/{76036F5E-CBCE-46D1-AF0A-4143F9B557AA}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sample/Sample Item/Data/{AE76A034-9491-4B83-99F5-39F227D6FB59}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sample/Sample Item/Data/Title/{75577384-3C97-45DA-A847-81B00500E250}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sample/Sample Item/Data/Text/{A60ACD61-A6DB-4182-8329-C957982CEC74}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sample/Sample Item/__Standard Values/{9DFBB778-512F-4BA7-8293-C01503572D30}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Workflows/Sample Workflow/{A5BC37E7-ED96-4C1E-8590-A26E64DB55EA}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Sample/Sample Rendering/{493B3A83-0FA7-4484-8FC9-4680991CF743}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/Dogs Alive/{65B0AF2B-27C3-4BBA-B367-C4533171DC78}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Layouts/Dogs Alive/Mobile/{6B5923C8-C90B-4794-A082-306A588969B6}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Layout/Layout/{3A45A723-64EE-4919-9D41-02FD40FD1466}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Layout/Layout/Data/{7DE9EE2B-7CE1-483F-B7B2-5F985E88D287}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Layout/Layout/Data/Path/{A036B2BC-BA04-44F6-A75F-BAE6CD242ABF}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Layout/Layout/Data/Model/{E9CC5A73-3C8A-4D7D-92AC-3B88C18A996A}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Layout/Layout/Data/Area/{70DC08D9-CDA2-4F04-AA35-C11FD7138066}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/System/Layout/Layout/__Standard Values/{5377666A-5ADC-4EA1-B9B9-A21C0F84AADA}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Items</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/css</x-item>
+        <x-item>/fonts</x-item>
+        <x-item>/images</x-item>
+        <x-item>/scripts</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

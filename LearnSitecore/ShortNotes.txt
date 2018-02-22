@@ -1,0 +1,60 @@
+﻿###################################################################################### 
+###############   Sitecore - Website development for .NET developers   ###############
+######################################################################################
+
+######################################################################################
+Module 9: Buckets, security, workflows and publishing
+
+	- Effectively use bickets for large volumes of items
+	- Control access rights for content authors and visiting users
+	- Set up effective workflows for content approval
+	- Use the different publish modes available  in Sitecore
+		  
+...
+Took a look at the versioning, multi language setup and specific field 
+versioning and sharing all done in Sitecore rocks and Sitecore Web client
+
+...
+First look of usage and creating buckets in Sitecore...
+
+...
+Reviewed the Sitecores Bucket system with the advanced search options with Facets... 
+Established the Simple Workflow with all the stages with a non Admin user...
+Went in depth with the Sitecore publishing features...
+
+######################################################################################
+Modile 10: Scaling your development practices
+
+	- Create an effective solution structure and setup
+	- Synchonize your files and content across environments
+	- Identify the tools used for serialization
+
+...
+Project Structure
+	- Reference a version-controlled Libraries folder or set up a local NuGet server 
+	  and update your package references
+	- Do not reference .dlls in your local Website folder
+	- Patches and configuration changes: /App_Config/Include
+	- You can vie the complete, patched file using
+	 "/sitecore/admin/ShowConfig.aspx" or the open expanded web.config option in
+	 Sitecore rocks
+	- Conside whether to reference and item by ID or by Path
+
+Topology
+	- Create a dedicated site item just in case
+    - Identify reusable content
+ 
+Custom items
+	- Organize into subfolders
+	- Use author-friendly names
+	- Use icons 
+	- Use multiple base templates to avoid field redundancy
+	 
+...
+Packages 
+
+	- Describe the different types of packages
+	- Create and use packages 
+	- Identify the tool used when upgrading Sitecore
+
+ 
