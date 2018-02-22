@@ -57,4 +57,52 @@ Packages
 	- Create and use packages 
 	- Identify the tool used when upgrading Sitecore
 
- 
+######################################################################################
+Modile 11: Scaling and tuning Sitecore
+
+	- Descrive methods for installing Sitecore
+	- Discuss methods for scaling the CMS
+	- Describe caching 
+	- Discuss scaling the xDB
+
+...
+11.1 Installation
+
+	- List mulitiple options for installing Sitecore
+	- Recall the requrements for scalling the CMS and the Experience Database (xDB)
+
+	Installation options:
+		- Sitecore intallation Wizard
+		- Sitecore Instance Manager (SIM) [marketplace.sitecore.net]
+		- Sitecore Rocks
+		- Manual installation from .zip archive
+
+... 
+11.2 Scaling CMS Components
+
+	- Scale vertically and horizontally
+	- Scaling Sitecore horizontally adds additional servers to an environment
+	- Set up multiple CM envs. behind a load balancer (one dedicated 'publlisher')
+	- SQL clustering for high availability or mirroring and replication access envs.
+	- Visit "sdn.sitecore.net":
+		+ Scalling guide
+		+ CMS performance tuning guide
+
+... 
+11.3 Caching
+	- List the layers of caching available 
+	- Show how to clear cache
+	- Adjust various cache options
+	- Switch to Debug mode in the Experience Editor
+	 
+	Item Requested -> Item -> Data -> Prefetch -> Database
+
+	Where is caching configured?
+		- Component definition item
+		- Per instance of the component
+		- Use standard values on the item's template
+		- Use definition item of the component
+
+11.4 Scaling the xDB
+	- Explain the flow of data in the xDB
+	- Describe how the xDB can be scaled
